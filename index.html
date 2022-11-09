@@ -1,94 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Mighty Bytes</title>
-    <style>
-      header {
-        text-align: center;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-      }
-      nav {
-        /* background-color:red; */
-        grid-column: 3 / 4;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-      }
-      nav ul {
-        display: flex;
-        list-style-type: none;
-      }
-      nav li {
-        margin-left: 3em;
-        margin-bottom: 0px;
-      }
-      a:link {
-        text-decoration: none;
-      }
-      h1 {
-        grid-column: 2 / 3;
-      }
-      #colOne {
-        float: left;
-        width: 50%;
-      }
-      #colTwo {
-        float: right;
-        width: 50%;
-      }
-      #iron-man {
-        padding-left: 20%;
-        padding-top: 20%;
-      }
-      body {
-        /* background-color:black; */
-        font-family: Roboto;
-      }
-      h2 {
-        padding-top: 15%;
-        padding-left: 2%;
-      }
-      p {
-        padding-left: 2%;
-      }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <h1>Mighty Bytes</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Marvel API</a></li>
-          <li><a href="#">DC API</a></li>
-          <li><a href="#">About Our Team</a></li>
-        </ul>
-      </nav>
-    </header>
-    <aside id="colOne">
-      <h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua.
-      </p>
-    </aside>
-    <!--end colOne-->
-    <aside id="colTwo">
-      <img src="Photos/iron_man_logo.jpg" id="iron-man" />
-    </aside>
-    <!--end colTwo-->
-  </body>
-</html>
+<head>
+<style>
+nav {
+	background-color:black;
+	padding-top:1%;
+	padding-bottom:1%;
+}
+nav li {
+	display:inline;
+	padding-right:2%;
+	color:white;
+}
+a:link, a:visited, a:active{
+	text-decoration:none;
+	color:white;
+}
+a:hover {
+	text-decoration:underline;
+	color:white;
+}
+h1 {
+	display:inline;
+	justify-content:space-between;
+	padding-right:40%;
+}
+#colOne {
+	float:left;
+	width:50%
+}
+#colTwo {
+	float:right;
+	width:50%
+}
+#iron-man {
+	padding-left:20%;
+	padding-top:20%;
+}
+body {
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+h2 {
+	padding-top:15%;
+	padding-left:2%;
+	color:white;
+	text-shadow: 2px 2px #FF0000
+}
+p {
+	padding-left:2%;
+	color:white;
+	text-shadow: 2px 2px #FF0000
+}
+
+</style>
+<nav>
+	<ul>
+		<li><h1>Mighty Bytes</h1></li>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#">Marvel API</a></li>
+		<li><a href="#">DC API</a></li>
+		<li><a href="#">About Our Team</a></li>
+	</ul>
+</nav>
+</head>
+<body style="background-image: url('Photos/avenger2.jpg');">
+	<aside id="colOne">
+		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</aside <!--end colOne-->
+	<aside id="colTwo">
+		<img src="Photos/iron_man_logo.jpg" id="iron-man">
+	</aside <!--end colTwo-->
+</body>
