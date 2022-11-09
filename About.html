@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mighty Bytes: About Us</title>
+    <style>
+      header {
+        text-align: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+      }
+      nav {
+        /* background-color:red; */
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      nav ul {
+        display: flex;
+        list-style-type: none;
+      }
+      nav li {
+        margin-left: 3em;
+        margin-bottom: 0px;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      h1 {
+        grid-column: 2 / 3;
+      }
+      #colOne {
+        float: left;
+        width: 50%;
+      }
+      #colTwo {
+        float: right;
+        width: 50%;
+
+      }
+      #Superheroes {
+        padding-left: 5%;
+        padding-top: 10%;
+        width: 500px;
+      }
+      body {
+        /* background-color:black; */
+        font-family: Roboto;
+      }
+      h2 {
+        paddint-top: 5%;
+        padding-left: 2%;
+      }
+      p {
+        padding-left: 2%;
+      }
+      h4 {
+        padding-left: 2%;
+      }
+      pre {
+        font-size: 15px;
+        font-family: Roboto;
+      }
+      #Col2Hdgs {
+        padding-top: 5%;
+      }
+      .Names {
+        font-weight: bold;
+      }
+      .Year {
+        font-style: italic;
+        color: #454343;
+      }
+      .Super {
+        font-weight: bolder;
+        color: #e00707;
+        text-decoration: underline;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Mighty Bytes</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Marvel API</a></li>
+          <li><a href="#">DC API</a></li>
+          <li><a href="About.html">About Our Team</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside id="colOne">
+      <h2>
+        About Us
+      </h2>
+      <p>
+        The theme for byte jam this year is "<span class="Super">SUPERHEROES</span>". Our team decided to make a website for searching through API's to find 
+        relevant information about any superhero in their respective universe.
+      </p>
+      <h4>
+        Team members:
+      </h4>
+      <pre>
+        <span class="Names">Chad Walker</span> - <span class="Year">Second Year</span>
+        <span class="Names">Chase Earnest</span> - <span class="Year">First Year</span>
+        <span class="Names">Colton Sheldon</span> - <span class="Year">First Year</span>
+        <span class="Names">Kevin Moore</span> - <span class="Year">First Year</span>
+        <span class="Names">Landon Harl</span> - <span class="Year">First Year</span>
+        <span class="Names">Nick Neely</span> - <span class="Year">First Year</span>
+        <span class="Names">Sam Bachman</span> - <span class="Year">Second Year</span>
+      </pre>
+    </aside>
+    <!--end colOne-->
+    <aside id="colTwo">
+        <h4 id="Col2Hdgs">
+            Programs Used:
+        </h4>
+        <p>
+            Visual Studio Code
+        </p>
+        <h4>
+            Programmed in:
+        </h4>
+        <p>
+            HTML5
+        </p>
+        <p>
+            CSS
+        </p>
+        <p>
+            JavaScript
+        </p>
+        <h4>
+            Version Control:
+        </h4>
+        <p>
+            Git
+        </p>
+    </aside>
+    <!--end colTwo-->
+  </body>
+</html>
