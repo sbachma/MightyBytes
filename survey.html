@@ -1,0 +1,50 @@
+<style>
+    .field1 {background-color:red; color:white; width:400px;
+    }
+    form fieldset.field1 label {
+        width: 110px; display:block; float:left; padding:5px; margin:10px;
+    }
+        
+    input[type="text"], input[type="email"]{width: 210px; padding:5px; margin:10px;
+    }
+    
+    
+    
+    p {padding:5px; margin:10px;
+    }
+    h2 {text-align:center;
+    }
+    
+    
+    </style>
+    
+    <form method="get" target="_blank"action="https://www.w3schools.com/action_page.php">
+    <fieldset class="field1">
+        <h2>Take our survey!</h2>
+        <br>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" placeholder="First Name">
+        <br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Your Email">
+        <br>
+        <p>Marvel or DC?</p>
+        <input type="radio" id="Marvel" name="favorite" value="favorite">
+        <label for="Marvel">Marvel</label>
+        <input type="radio" id="DC" name="favorite" value="DC">
+        <label for="DC">DC</label>
+        <br>
+        <br>
+        <label for="favHero">Favorite Hero:</label>
+        <input type="text" name="favHero" id="favHero">
+        <br>
+        <label for="favVillain">Favorite Villain:</label>
+        <input type="text" name="favVillain" id="favVillain">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        </fieldset>
+        </br>
