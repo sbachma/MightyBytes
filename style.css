@@ -33,7 +33,7 @@ nav a {
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 500;
-  transition: color 150ms;
+  transition: color 250ms;
   position: relative;
 }
 nav a:hover {
@@ -59,6 +59,7 @@ nav a:active::before {
 }
 h1 {
   grid-column: 2 / 3;
+  color: hsl(47, 86%, 64%);
 }
 #colOne {
   float: left;
