@@ -70,7 +70,7 @@ h1 {
   width: 50%;
 }
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   margin: 0;
   /* background-color: lightgray; */
 }
@@ -85,23 +85,6 @@ h2 {
 p {
   padding-left: 2%;
 }
-
-@media screen and (max-width: 800px) {
-  /* body {
-    background-color: gray;
-  } */
-  #colOne {
-    float: none;
-    margin: 0 auto 0 auto;
-  }
-  #colTwo {
-    float: none;
-    margin: 0 auto 0 auto;
-  }
-  .field1 {
-    margin-top: 3.5em;
-  }
-}
 #Mighty-Bytes {
   width: 300px;
   display: block;
@@ -113,38 +96,47 @@ p {
   color: hsl(358, 65%, 39%);
   text-decoration: underline;
 }
-.field1 {background-color:hsl(358, 65%, 39%); color:white; width:400px;
-display: block;
-margin-top: 150px;
-margin-left: auto;
-margin-right: auto;
-border-style: solid;
-border-width: 5px; 
-border-color: gold; border-radius: 10px;
+.field1 {
+  background-color: hsl(358, 65%, 39%);
+  color: white;
+  width: 400px;
+  display: block;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: gold;
+  border-radius: 10px;
 }
 form fieldset.field1 label {
-  width: 110px; display:inline-block; padding:5px; margin:10px;
-  width: 110px; 
-  display:inline-block; 
-  padding:5px; 
-  margin:10px;
+  width: 110px;
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  width: 110px;
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
 }
-  
-input[type="text"], input[type="email"]{width: 210px; padding:5px; margin:10px;
+
+input[type="text"],
+{
+  width: 210px;
+  padding: 5px;
+  margin: 10px;
 }
-input[type="text"], input[type="email"]{
-width: 210px; 
-padding:5px; 
-margin:10px;
+input[type="text"],
+{
+  width: 210px;
+  padding: 5px;
+  margin: 10px;
 }
 input[type="text"]:focus {
-background-color: gold; 
+  background-color: gold;
 }
-input[type="email"]:focus {
-background-color: gold;
-}  
-form 
-.dc-radio, .marvel-radio {
+form .dc-radio,
+.marvel-radio {
   display: flex;
 }
 .dc-radio {
@@ -154,9 +146,12 @@ form
   float: right;
 }
 
-p {padding:5px; margin:10px;
+p {
+  padding: 5px;
+  margin: 10px;
 }
-h2 {text-align:center;
+h2 {
+  text-align: center;
 }
 #submit-button {
   cursor: pointer;
@@ -172,4 +167,46 @@ h2 {text-align:center;
 }
 #submit-button:active {
   background: hsl(0, 0%, 90%);
+}
+/* #themesong {
+  margin-left: 30%;
+}
+#themesong h3 {
+  margin-left: 20%;
+} */
+#themesong {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#Mighty-Bytes {
+  margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  /* body {
+    background-color: gray;
+  } */
+  #colOne {
+    float: none;
+    margin: 0 auto 0 auto;
+  }
+  #colTwo {
+    float: none;
+    margin: 0 auto 0 auto;
+  }
+  .field1 {
+    margin-top: 3.5em;
+  }
+  #themesong {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #Mighty-Bytes {
+    margin: 0 auto;
+  }
 }
