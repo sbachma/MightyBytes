@@ -3,13 +3,32 @@
   <head>
     <title>Mighty Bytes</title>
     <link rel="stylesheet" href="style.css" />
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous">
+	</script>
+	<script>
+	function SubForm (){
+		$.ajax({
+			url:"https://api.apispreadsheets.com/data/Ddjz509DTTuR9W8F/",
+			type:'post',
+			data:$("#myForm").serializeArray(),
+			success: function(){
+				alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+	</script>
     <style>
       #Mighty-Bytes {
         width: 300px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        border: 2px solid black;
       }
       .theme {
         font-weight: bold;
@@ -18,34 +37,33 @@
       }
     .field1 {background-color:hsl(358, 65%, 39%); color:white; width:400px;
       display: block;
-      margin-top: 5.4em;
+      margin-top: 150px;
       margin-left: auto;
       margin-right: auto;
-      border-style: solid;
+	  border-style: solid;
       border-width: 5px; 
       border-color: gold; border-radius: 10px;
-
     }
     form fieldset.field1 label {
+        width: 110px; display:inline-block; padding:5px; margin:10px;
         width: 110px; 
         display:inline-block; 
         padding:5px; 
         margin:10px;
     }
         
+    input[type="text"], input[type="email"]{width: 210px; padding:5px; margin:10px;
     input[type="text"], input[type="email"]{
       width: 210px; 
       padding:5px; 
       margin:10px;
-
-    }
+}
     input[type="text"]:focus {
       background-color: gold; 
     }
     input[type="email"]:focus {
       background-color: gold;
     }  
-    
     form 
     .dc-radio, .marvel-radio {
         display: flex;
@@ -108,7 +126,7 @@
       </aside>
       <!--end colOne-->
       <aside id="colTwo">
-        <form method="get" target="_blank"action="https://www.w3schools.com/action_page.php">
+        <form id="myForm" method="get" target="_blank"action="https://www.w3schools.com/action_page.php">
           <fieldset class="field1">
               <h2>Take our survey!</h2>
               <br>
@@ -123,7 +141,7 @@
               <br>
               <p>Marvel or DC?</p>
               <div class="marvel-radio">
-              <input type="radio" id="Marvel" name="favorite" value="favorite">
+              <input type="radio" id="Marvel" name="favorite" value="Marvel">
               <label for="Marvel">Marvel</label>
               </div>
               <div class="dc-radio">
@@ -139,8 +157,9 @@
               <input type="text" name="favVillain" id="favVillain">
               <br>
               <br>
-              <input id ="submit-button" type="button" value="Submit">
+              <input onclick="SubForm()" id="submit-button" type="button" value="Submit">
               </fieldset>
+              </br>
       </aside>
       <!--end colTwo-->
     </div>
