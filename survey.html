@@ -1,23 +1,37 @@
-<style>
-    .field1 {background-color:red; color:white; width:400px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <style>
+    .field1 {background-color:hsl(358, 65%, 39%); color:white; width:400px;
     }
     form fieldset.field1 label {
-        width: 110px; display:block; float:left; padding:5px; margin:10px;
+        width: 110px; display:inline-block; padding:5px; margin:10px;
     }
         
     input[type="text"], input[type="email"]{width: 210px; padding:5px; margin:10px;
     }
-    
-    
+    form 
+    .dc-radio, .marvel-radio {
+        display: flex;
+    }
+    .dc-radio {
+        margin-left: 50px;
+    }
+    .marvel-radio {
+        float: right;
+    }
     
     p {padding:5px; margin:10px;
     }
     h2 {text-align:center;
     }
-    
-    
     </style>
-    
+</head>
+<body>
     <form method="get" target="_blank"action="https://www.w3schools.com/action_page.php">
     <fieldset class="field1">
         <h2>Take our survey!</h2>
@@ -32,10 +46,14 @@
         <input type="email" name="email" id="email" placeholder="Your Email">
         <br>
         <p>Marvel or DC?</p>
+        <div class="marvel-radio">
         <input type="radio" id="Marvel" name="favorite" value="favorite">
         <label for="Marvel">Marvel</label>
+        </div>
+        <div class="dc-radio">
         <input type="radio" id="DC" name="favorite" value="DC">
         <label for="DC">DC</label>
+        </div>
         <br>
         <br>
         <label for="favHero">Favorite Hero:</label>
@@ -48,3 +66,5 @@
         <input type="submit" value="Submit">
         </fieldset>
         </br>
+        </body>
+</html>
