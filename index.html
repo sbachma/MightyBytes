@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mighty Bytes</title>
     <link rel="stylesheet" href="style.css" />
 	<script
@@ -14,7 +11,7 @@
 	<script>
 	function SubForm (){
 		$.ajax({
-			url:"https://api.apispreadsheets.com/data/Ddjz509DTTuR9W8F/",
+			url:"https://api.apispreadsheets.com/data/yfZBN26gNXzfx9Ya/",
 			type:'post',
 			data:$("#myForm").serializeArray(),
 			success: function(){
@@ -55,6 +52,7 @@
         </p>
         <img src="Photos/MB-Logo.png" id="Mighty-Bytes" />
         <div id="themesong">
+          <h3>Theme Song</h3>
         <audio controls>
           <source src="MP3/Theme.mp3" type="audio/mp3">
         </audio>
@@ -64,9 +62,16 @@
       <aside id="colTwo">
         <form id="myForm" method="get" target="_blank"action="https://www.w3schools.com/action_page.php">
           <fieldset class="field1">
-              <h2>Take our anonymous survey!</h2>
+              <h2>Take our survey!</h2>
               <br>
-
+              <label for="firstname">First Name:</label>
+              <input type="text" name="firstname" id="firstname" placeholder="First Name">
+              <br>
+              <label for="lastname">Last Name:</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+              <br>
+              <label for="favMovie">Favorite Movie:</label>
+              <input type="text" name="favMovie" id="favMovie" placeholder="Favorite Movie">
               <br>
               <p>Marvel or DC?</p>
               <div class="marvel-radio">
