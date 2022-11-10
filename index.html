@@ -4,15 +4,60 @@
     <title>Mighty Bytes</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-      #iron-man {
-        padding-left: 20%;
-        padding-top: 20%;
+      #Mighty-Bytes {
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid black;
       }
       .theme {
         font-weight: bold;
         color: hsl(358, 65%, 39%);
         text-decoration: underline;
       }
+    .field1 {background-color:hsl(358, 65%, 39%); color:white; width:400px;
+      display: block;
+      margin-top: 5.4em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    form fieldset.field1 label {
+        width: 110px; display:inline-block; padding:5px; margin:10px;
+    }
+        
+    input[type="text"], input[type="email"]{width: 210px; padding:5px; margin:10px;
+    }
+    form 
+    .dc-radio, .marvel-radio {
+        display: flex;
+    }
+    .dc-radio {
+        margin-left: 50px;
+    }
+    .marvel-radio {
+        float: right;
+    }
+    
+    p {padding:5px; margin:10px;
+    }
+    h2 {text-align:center;
+    }
+    #submit-button {
+        cursor: pointer;
+        margin-left: 45%;
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 150ms;
+    }
+    #submit-button:hover {
+        background-color: hsl(0, 0%, 95%);
+    }
+    #submit-button:active {
+        background: hsl(0, 0%, 90%);
+    }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,10 +86,43 @@
         <p>
           Indian Hills has chosen <span class="theme">Superheroes</span> as this year's theme. Our team, The Mighty Bytes, have chosen to bring Marvel Comics into the spotlight for this year's competition.
         </p>
+        <img src="Photos/MB-Logo.png" id="Mighty-Bytes" />
       </aside>
       <!--end colOne-->
       <aside id="colTwo">
-        <img src="Photos/iron_man_logo.jpg" id="iron-man" />
+        <form method="get" target="_blank"action="https://www.w3schools.com/action_page.php">
+          <fieldset class="field1">
+              <h2>Take our survey!</h2>
+              <br>
+              <label for="firstname">First Name:</label>
+              <input type="text" name="firstname" id="firstname" placeholder="First Name">
+              <br>
+              <label for="lastname">Last Name:</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+              <br>
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="Your Email">
+              <br>
+              <p>Marvel or DC?</p>
+              <div class="marvel-radio">
+              <input type="radio" id="Marvel" name="favorite" value="favorite">
+              <label for="Marvel">Marvel</label>
+              </div>
+              <div class="dc-radio">
+              <input type="radio" id="DC" name="favorite" value="DC">
+              <label for="DC">DC</label>
+              </div>
+              <br>
+              <br>
+              <label for="favHero">Favorite Hero:</label>
+              <input type="text" name="favHero" id="favHero">
+              <br>
+              <label for="favVillain">Favorite Villain:</label>
+              <input type="text" name="favVillain" id="favVillain">
+              <br>
+              <br>
+              <input id ="submit-button" type="button" value="Submit">
+              </fieldset>
       </aside>
       <!--end colTwo-->
     </div>
