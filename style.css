@@ -121,21 +121,18 @@ form fieldset.field1 label {
 }
 
 input[type="text"],
-input[type="email"] {
+{
   width: 210px;
   padding: 5px;
   margin: 10px;
 }
 input[type="text"],
-input[type="email"] {
+{
   width: 210px;
   padding: 5px;
   margin: 10px;
 }
 input[type="text"]:focus {
-  background-color: gold;
-}
-input[type="email"]:focus {
   background-color: gold;
 }
 form .dc-radio,
