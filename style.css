@@ -70,7 +70,7 @@ h1 {
   width: 50%;
 }
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   margin: 0;
   /* background-color: lightgray; */
 }
@@ -171,11 +171,21 @@ h2 {
 #submit-button:active {
   background: hsl(0, 0%, 90%);
 }
-#themesong {
+/* #themesong {
   margin-left: 30%;
 }
 #themesong h3 {
   margin-left: 20%;
+} */
+#themesong {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#Mighty-Bytes {
+  margin: 0 auto;
 }
 @media screen and (max-width: 800px) {
   /* body {
@@ -193,9 +203,13 @@ h2 {
     margin-top: 3.5em;
   }
   #themesong {
-    margin-left: 10%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  #themesong h3 {
-    margin-left: 30%;
+  #Mighty-Bytes {
+    margin: 0 auto;
   }
 }
