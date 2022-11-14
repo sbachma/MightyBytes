@@ -100,7 +100,7 @@ p {
 .field1 {
   background-color: hsl(358, 65%, 39%);
   color: white;
-  width: 400px;
+  width: 440px;
   display: block;
   margin-top: 150px;
   margin-left: auto;
@@ -133,6 +133,7 @@ input[type="email"] {
   padding: 5px;
   margin: 10px;
 }
+input[type="radio"]{margin-left: 35px;}
 input[type="text"]:focus {
   background-color: gold;
 }
@@ -149,6 +150,9 @@ form .dc-radio,
 .marvel-radio {
   float: right;
 }
+#age{
+  margin-right: 20px;
+}
 
 p {
   padding: 5px;
@@ -157,6 +161,7 @@ p {
 #submit-button {
   cursor: pointer;
   margin-left: 45%;
+  margin-bottom: 20px;
   padding: 5px 10px 5px 10px;
   background-color: white;
   border: none;
