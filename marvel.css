@@ -1,6 +1,6 @@
-content {
+.content {
   margin: 0;
-  padding: 0;
+  padding-top: 125px;
 }
 
 body {
@@ -171,3 +171,8 @@ content h1 {
   height: 4em;
   width: 100%;
 }
+/* @media screen and (max-width: 800px) {
+  body {
+    background-color: gray;
+  }
+} */

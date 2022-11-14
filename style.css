@@ -25,7 +25,7 @@ nav ul {
   list-style-type: none;
 }
 nav li {
-  margin-left: 3em;
+  margin-left: 2.5em;
   margin-bottom: 0px;
 }
 nav a {
@@ -72,11 +72,10 @@ header h1 {
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
-  /* background-color: lightgray; */
+  background-color: lightgray;
 }
 .content {
   padding-top: 50px;
-  height: 200vh;
 }
 h2 {
   padding-top: 15%;
@@ -133,7 +132,9 @@ input[type="email"] {
   padding: 5px;
   margin: 10px;
 }
-input[type="radio"]{margin-left: 35px;}
+input[type="radio"] {
+  margin-left: 35px;
+}
 input[type="text"]:focus {
   background-color: gold;
 }
@@ -150,7 +151,7 @@ form .dc-radio,
 .marvel-radio {
   float: right;
 }
-#age{
+#age {
   margin-right: 20px;
 }
 
@@ -184,6 +185,26 @@ p {
 #Mighty-Bytes {
   margin: 0 auto;
 }
+#ComicPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#OldLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#StanLee1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#StanLee2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (max-width: 800px) {
   #colOne {
     float: none;
@@ -206,24 +227,7 @@ p {
   #Mighty-Bytes {
     margin: 0 auto;
   }
-}
-#ComicPic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-#OldLogo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-#StanLee1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-#StanLee2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  nav a {
+    font-size: 1.2rem;
+  }
 }
