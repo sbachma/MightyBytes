@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mighty Bytes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="marvel.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	  <script src="//code.jquery.com/jquery-latest.min.js"></script>
+	  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	  <script type="text/javascript" src="./js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---
+    <header>
+      
+      <h1>Mighty Bytes</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Marvel API</a></li>
+          <li><a href="#">DC API</a></li>
+          <li><a href="About.html">About Our Team</a></li>
+        </ul>
+      </nav>
+    </header>-->
+    <div class="container">
+
+      <div class="header">
+        <div class="background">
+          <img src="./Photos/several2.jpg" alt="">
+        </div>
+        <div class="search-bar">
+          <img src="./Photos/Marvel_Comics_Search.png" alt="">
+          <input type="text" class="input-field" placeholder="Search for Marvel Heroes"/>
+          <button class="search-btn" type="button">Search</button>
+        </div>
+      </div>
+
+      <div class="character-image">
+        <img class="character-profile"  alt="Character Image">
+        <h1 class="character-name"></h1>
+      </div>
+      
+      <div class="comic-copy">
+        <h1>Comics</h1>
+        <p class="comic-description"></p>
+      </div>
+
+      <div class="comic-container"></div>
+
+      <div class="error">
+        <img src="./Photos/confused-spiderman.jpg" alt="" >
+        <p>Sorry, character doesn't exist.</p>
+      </div>
+
+    </div>
+
+  </body>
+</html>
