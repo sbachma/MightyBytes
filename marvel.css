@@ -101,9 +101,22 @@ content h1 {
 }
 
 .character-image h1 {
+<<<<<<< HEAD
+	color: white;
+	font-size: 3em;
+	padding: 1.3em 0; 
+}
+
+.character-image h3{
+	color:#ffff00;
+	padding-left: 26em;
+	padding-right: 3em;
+	
+=======
   color: white;
   font-size: 3em;
   padding: 3.3em 0;
+>>>>>>> 6667c38199150ba84295a8a916364bc663a2f2d4
 }
 
 .error {

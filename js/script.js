@@ -37,12 +37,14 @@ $(function () {
 				var image = data.data.results[0].thumbnail;
 				var characterName = data.data.results[0].name;
 				var characterID = data.data.results[0].id;
+				var characterDescription = data.data.results[0].description
 				//console.log(data);
 				$('.error').hide();
 				$('.character-image').show();
 				$('.character-profile').attr("src", image.path + "." + image.extension);
 				$('.character-name').text(characterName);
-				getComics(characterID, characterName);
+				$('.character-description').text(characterDescription)
+				getComics(characterID, characterName, characterDescription);
 			}
 			catch (e) {
 				$('.comic').hide();

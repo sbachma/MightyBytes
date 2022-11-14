@@ -180,9 +180,6 @@ p {
   margin: 0 auto;
 }
 @media screen and (max-width: 800px) {
-  /* body {
-    background-color: gray;
-  } */
   #colOne {
     float: none;
     margin: 0 auto 0 auto;
