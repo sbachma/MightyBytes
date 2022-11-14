@@ -234,3 +234,29 @@ p {
     font-size: 1.2rem;
   }
 }
+#Col2Hdgs {
+  padding-top: 5%;
+  font-weight: bolder;
+}
+.Names {
+  font-weight: bold;
+}
+.Year {
+  font-style: italic;
+  color: #111111;
+}
+.Super {
+  font-weight: bolder;
+  color: #000000;
+  text-decoration: underline;
+}
+#Marvel {
+  width: 100px;
+  padding-top: 20%;
+  padding-left: 2%;
+}
+#MightyLogo {
+  width: 100px;
+  padding-top: 12%;
+  margin-left: 580px;
+}
