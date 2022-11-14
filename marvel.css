@@ -1,186 +1,174 @@
-*{
-    margin: 0;
-    padding: 0;
-    
+content {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: #5db24d;
+body {
+  background-color: #5db24d;
 }
 
 p {
-	color: black;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1em;
-	font-weight: 300;
-	text-align: center;
-	margin-top: .5em;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0.5em;
 }
 
-
-
-h1 {
-	color: black;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	font-size: 2em;
-	text-transform: uppercase;
-	text-align: center;
+content h1 {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .container {
-	margin: 0 auto;
-	width: 65%;
+  margin: 0 auto;
+  width: 65%;
 }
 
-
-.header .background img{
-    margin: 0 auto;
-    width: 100%;
-    height: 574px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-
-    
+.header .background img {
+  margin: 0 auto;
+  width: 100%;
+  height: 574px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-.search-bar{
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    
+.search-bar {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .input-field:focus {
-	outline: none;
+  outline: none;
 }
 
-.search-btn{
-    width: 350px;
-    height: 65px;
-    border-radius: 50%;
-	background-color: #f0141e;
-	color: white;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.5em;
-	font-weight: 400;
-	text-transform: uppercase;
-	border: 2px solid white; 
-	float: right;
-	cursor: pointer;
-	outline: none;
-    padding: 10px 15px
+.search-btn {
+  width: 350px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #f0141e;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 2px solid white;
+  float: right;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 15px;
 }
 
 .search-btn:hover {
-	color: #f0141e;
-	background-color: #ffff00;
+  color: #f0141e;
+  background-color: #ffff00;
 }
 
-
-
-.header .input-field{
-    outline: none;
-    background: none;
-    border: none;
-    margin-left: 2rem;
-    margin-right: 1rem;
-    width: 350px;
-    height: 35px;
-    border-radius: 1rem;
-    color: white;
-    font-size: 20px;
-    padding: 2rem;
-    border: 2px solid #B41F23;
+.header .input-field {
+  outline: none;
+  background: none;
+  border: none;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  width: 350px;
+  height: 35px;
+  border-radius: 1rem;
+  color: white;
+  font-size: 20px;
+  padding: 2rem;
+  border: 2px solid #b41f23;
 }
-
-
 
 .character-image {
-	display: none;
-	background-color: #f0141e;
-	height: 400px;
-    margin: 2rem auto;
+  display: none;
+  background-color: #f0141e;
+  height: 400px;
+  margin: 2rem auto;
 }
 
 .character-image img {
-	height: 400px;
-	width: 400px;
-	float: left;
+  height: 400px;
+  width: 400px;
+  float: left;
 }
 
 .character-image h1 {
-	color: white;
-	font-size: 3em;
-	padding: 1.3em 0; 
+  color: white;
+  font-size: 3em;
+  padding: 1.3em 0;
 }
 
-.character-image h3{
-	color:#ffff00;
-	padding-left: 26em;
-	padding-right: 3em;
-	
+.character-image h3 {
+  color: #ffff00;
+  padding-left: 26em;
+  padding-right: 3em;
 }
 
 .error {
-	display: none;
-	margin: 0 auto;
+  display: none;
+  margin: 0 auto;
 }
 
 .error img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .error p {
-	color: white;
-	font-weight: 400;
-	line-height: 1.4em;
-	text-align: center;
-	margin-top: 2em;
-	margin-left: 12em;
-	margin-right: 12em;
+  color: white;
+  font-weight: 400;
+  line-height: 1.4em;
+  text-align: center;
+  margin-top: 2em;
+  margin-left: 12em;
+  margin-right: 12em;
 }
 
 .comic-container {
-	display: none;
-	text-align: center;
+  display: none;
+  text-align: center;
 }
 
 .comic-copy {
-	display: none;
+  display: none;
 }
 
 .comic-copy h1 {
-	color: white;
-	margin-top: 1em;
+  color: white;
+  margin-top: 1em;
 }
 
 .comic-copy p {
-	color: white;
-	font-weight: 400;
-	margin-bottom: 2em;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 2em;
 }
 
 .comic {
-	width: 216px;
-	display: inline-block;
-	vertical-align: top;
-	margin: .5em;
+  width: 216px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0.5em;
 }
 
 .comic img {
-	width: 216px;
-	height: 324px;
+  width: 216px;
+  height: 324px;
 }
 
 .comic p {
-	color: white;
-	font-weight: 400;
-	line-height: 1.4em;
-	height: 4em;
-	width: 100%;
+  color: white;
+  font-weight: 400;
+  line-height: 1.4em;
+  height: 4em;
+  width: 100%;
 }
