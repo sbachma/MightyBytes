@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mighty Bytes</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .content {
+        padding-top: 0;
+      }
+      @media screen and (max-width: 800px) {
+        .content {
+          padding-top: 50px;
+        }
+      }
+    </style>
 	<script
 		src="https://code.jquery.com/jquery-3.4.1.js"
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -36,7 +49,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Marvel API</a></li>
+          <li><a href="Marvel.html">Marvel API</a></li>
           <li><a href="media.html">Media</a></li>
           <li><a href="About.html">About Our Team</a></li>
         </ul>
@@ -52,10 +65,10 @@
         </p>
         <img src="Photos/MB-Logo.png" id="Mighty-Bytes" />
         <div id="themesong">
-          <h3>Theme Song</h3>
         <audio controls>
           <source src="MP3/Theme.mp3" type="audio/mp3">
         </audio>
+        <p>"The world has always been a comic book world to me" ~ Stan Lee</p>
       </div>
       </aside>
       <!--end colOne-->
