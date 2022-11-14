@@ -12,17 +12,13 @@
       rel="stylesheet"
     />
     <style>
-      #col1 {
-        width: 50%;
-        float: left;
-        padding: 15px;
-      }
-      #col2 {
-        width: 30%;
-        float: right;
-        padding: 20px;
-        margin-right: 100px;
-      }
+	.video {
+		margin: auto;
+		width: 27%;
+	}
+	.labels {
+		text-align:center;
+	}
       body {
         background-color: black;
         color: #fff;
@@ -48,10 +44,7 @@
           text-shadow: 0 0 20px #fff, 0 0 30px #ff2838, 0 0 40px #ff2838,
             0 0 50px #ff2838, 0 0 60px #ff2838, 0 0 70px #ff2838,
             0 0 80px #ff2838;
-        }
-        /* .video {
-          margin-bottom: 15px;
-        } */
+}
       }
       p {
         display: inline;
@@ -62,11 +55,10 @@
       }
       h2 {
         font-family: "Saira";
+		text-align:center;
+		padding-top:0px;
+		padding-left:0px;
       }
-      /* #car {
-        padding-top: 130px;
-        padding-right: 900px;
-      } */
     </style>
   </head>
   <body>
@@ -84,14 +76,14 @@
     </header>
     <div class="content">
       <h1 class="glow" id="car">Media</h1>
-
-      <div id="col1">
+	    <h2>Opening Weekend Sales</h2>
         <div class="video">
           <iframe
             width="420"
             height="315"
             src="https://www.youtube.com/embed/eOrNdBpGMv8"
           ></iframe>
+		  <div class="labels"><br/>The Avengers: $207,438,708</div><br/>
         </div>
         <div class="video">
           <iframe
@@ -100,6 +92,7 @@
             src="https://www.youtube.com/embed/tmeOjFno6Do"
           >
           </iframe>
+		  	<div class="labels"><br/>Avengers: Age of Ultron: $191,271,109</div><br/>
         </div>
         <div class="video">
           <iframe
@@ -108,6 +101,7 @@
             src="https://www.youtube.com/embed/6ZfuNTqbHE8"
           >
           </iframe>
+			<div class="labels"><br/>Avengers Infinity War: $257,698,183</div><br/>
         </div>
         <div class="video">
           <iframe
@@ -116,17 +110,8 @@
             src="https://www.youtube.com/embed/TcMBFSGVi1c"
           >
           </iframe>
+		  	<div class="labels"><br/>Avengers Endgame: $357,155,007</div><br/>
         </div>
       </div>
-      <div id="col2">
-        <h2>Opening Weekend Sales</h2>
-        <p>
-          The Avengers: $207,438,708<br />
-          Avengers: Age of Ultron: $191,271,109<br />
-          Avengers Infinity War: $257,698,183<br />
-          Avengers Endgame: $357,155,007
-        </p>
-      </div>
-    </div>
   </body>
 </html>
