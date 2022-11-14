@@ -103,6 +103,7 @@ content h1 {
   color: white;
   font-size: 3em;
   padding: 1.3em 0;
+  padding-left: 10em;
 }
 
 .character-image h3 {
