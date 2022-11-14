@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mighty Bytes: About Us</title>
     <link rel="stylesheet" href="style.css" />
     <style>
@@ -9,11 +12,22 @@
         padding-top: 10%;
         width: 500px;
       }
+      body {
+        /* background-color:black; */
+        font-family: Roboto;
+      }
+      h2 {
+        padding-top: 5%;
+        padding-left: 2%;
+      }
+      p {
+        padding-left: 2%;
+      }
       h4 {
         padding-left: 2%;
       }
       pre {
-        font-size: 15px;
+        font-size: 18px;
         font-family: Roboto;
       }
       #Col2Hdgs {
@@ -24,12 +38,25 @@
       }
       .Year {
         font-style: italic;
-        color: #454343;
+        color: #111111;
       }
       .Super {
         font-weight: bolder;
-        color: #e00707;
+        color: #000000;
         text-decoration: underline;
+      }
+      #Marvel {
+        width: 100px;
+        padding-top: 20%;
+        padding-left: 2%;
+      }
+      body {
+        background-color: #ffffff;
+      }
+      #Mighty-Bytes {
+        width: 100px;
+        padding-top: 3%;
+        margin-left: 560px;
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,13 +81,6 @@
     <div class="content">
       <aside id="colOne">
         <h2>About Us</h2>
-        <p>
-          The theme for byte jam this year is "<span class="Super"
-            >SUPERHEROES</span
-          >". Our team decided to make a website for searching through API's to
-          find relevant information about any superhero in their respective
-          universe.
-        </p>
         <h4>Team members:</h4>
         <pre>
         <span class="Names">Chad Walker</span> - <span class="Year">Second Year</span>
@@ -71,17 +91,20 @@
         <span class="Names">Nick Neely</span> - <span class="Year">First Year</span>
         <span class="Names">Sam Bachman</span> - <span class="Year">Second Year</span>
       </pre>
+        <img src="Photos/Marvel_Logo.svg.png" id="Marvel" />
       </aside>
       <!--end colOne-->
       <aside id="colTwo">
         <h4 id="Col2Hdgs">Programs Used:</h4>
         <p>Visual Studio Code</p>
+        <p>GitHub</p>
         <h4>Programmed in:</h4>
         <p>HTML5</p>
         <p>CSS</p>
         <p>JavaScript</p>
         <h4>Version Control:</h4>
         <p>Git</p>
+        <img src="Photos/MB-Logo.png" id="Mighty-Bytes" />
       </aside>
       <!--end colTwo-->
     </div>

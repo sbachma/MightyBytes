@@ -3,12 +3,26 @@
   <head>
     <title>Mighty Bytes</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      #iron-man {
-        padding-left: 20%;
-        padding-top: 20%;
-      }
-    </style>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous">
+	</script>
+	<script>
+	function SubForm (){
+		$.ajax({
+			url:"https://api.apispreadsheets.com/data/yfZBN26gNXzfx9Ya/",
+			type:'post',
+			data:$("#myForm").serializeArray(),
+			success: function(){
+				alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+	</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,8 +36,8 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="Marvel.html">Marvel API</a></li>
-          <li><a href="#">DC API</a></li>
+          <li><a href="#">Marvel API</a></li>
+          <li><a href="media.html">Media</a></li>
           <li><a href="About.html">About Our Team</a></li>
         </ul>
       </nav>
@@ -31,19 +45,55 @@
     <div class="content">
       <aside id="colOne">
         <h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Marvel Comics
         </h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
+          Indian Hills has chosen <span class="theme">Superheroes</span> as this year's theme. Our team, The Mighty Bytes, have chosen to bring Marvel Comics into the spotlight for this year's competition.
         </p>
+        <img src="Photos/MB-Logo.png" id="Mighty-Bytes" />
+        <div id="themesong">
+          <h3>Theme Song</h3>
+        <audio controls>
+          <source src="MP3/Theme.mp3" type="audio/mp3">
+        </audio>
+      </div>
       </aside>
       <!--end colOne-->
       <aside id="colTwo">
-        <img src="Photos/iron_man_logo.jpg" id="iron-man" />
+        <form id="myForm" method="get" target="_blank"action="https://www.w3schools.com/action_page.php">
+          <fieldset class="field1">
+              <h2>Take our survey!</h2>
+              <br>
+              <label for="firstname">First Name:</label>
+              <input type="text" name="firstname" id="firstname" placeholder="First Name">
+              <br>
+              <label for="lastname">Last Name:</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+              <br>
+              <label for="favMovie">Favorite Movie:</label>
+              <input type="text" name="favMovie" id="favMovie" placeholder="Favorite Movie">
+              <br>
+              <p>Marvel or DC?</p>
+              <div class="marvel-radio">
+              <input type="radio" id="Marvel" name="favorite" value="Marvel">
+              <label for="Marvel">Marvel</label>
+              </div>
+              <div class="dc-radio">
+              <input type="radio" id="DC" name="favorite" value="DC">
+              <label for="DC">DC</label>
+              </div>
+              <br>
+              <br>
+              <label for="favHero">Favorite Hero:</label>
+              <input type="text" name="favHero" id="favHero">
+              <br>
+              <label for="favVillain">Favorite Villain:</label>
+              <input type="text" name="favVillain" id="favVillain">
+              <br>
+              <br>
+              <input onclick="SubForm()" id="submit-button" type="button" value="Submit">
+              </fieldset>
+              </br>
       </aside>
       <!--end colTwo-->
     </div>

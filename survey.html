@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <style>
+    .field1 {background-color:hsl(358, 65%, 39%); color:white; width:400px; border-style: solid;border-width: 5px; 
+        border-color: gold; border-radius: 10px;
+    }
+    form fieldset.field1 label {
+        width: 110px; display:inline-block; padding:5px; margin:10px;
+    }
+        
+    input[type="text"], input[type="email"]{width: 210px; padding:5px; margin:10px;
+    }
+    input[type="text"]:focus {background-color: gold; 
+    }
+    input[type="email"]:focus {background-color: gold;
+    }
+
+    form 
+    .dc-radio, .marvel-radio {
+        display: flex;
+    }
+    .dc-radio {
+        margin-left: 50px;
+    }
+    .marvel-radio {
+        float: right;
+    }
+    #submit-button {
+        cursor: pointer;
+        margin-left: 45%;
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 150ms;
+    }
+    #submit-button:hover {
+        background-color: hsl(0, 0%, 95%);
+    }
+    #submit-button:active {
+        background: hsl(0, 0%, 90%);
+    }
+    
+    p {padding:5px; margin:10px;
+    }
+    h2 {text-align:center;
+    }
+    </style>
+</head>
+<body>
+    <form method="get" target="_blank"action="https://www.w3schools.com/action_page.php">
+    <fieldset class="field1">
+        <h2>Take our survey!</h2>
+        <br>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" placeholder="First Name">
+        <br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Your Email">
+        <br>
+        <p>Marvel or DC?</p>
+        <div class="marvel-radio">
+        <input type="radio" id="Marvel" name="favorite" value="favorite">
+        <label for="Marvel">Marvel</label>
+        </div>
+        <div class="dc-radio">
+        <input type="radio" id="DC" name="favorite" value="DC">
+        <label for="DC">DC</label>
+        </div>
+        <br>
+        <br>
+        <label for="favHero">Favorite Hero:</label>
+        <input type="text" name="favHero" id="favHero">
+        <br>
+        <label for="favVillain">Favorite Villain:</label>
+        <input type="text" name="favVillain" id="favVillain">
+        <br>
+        <br>
+        <input id ="submit-button" type="button" value="Submit">
+        </fieldset>
+        </br>
+        </body>
+</html>
